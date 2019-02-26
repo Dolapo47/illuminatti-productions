@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Game List</title>
+        <link rel="stylesheet" href="style.css">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="css/style.css" rel="stylesheet">
+    </head>
+    <body>
+    <h1>This is a list of games we have: </h1>
+    <% gamesList.map(game => { %>
+    <div style = "border-style: solid; padding: 5px; margin: 50px; max-width: 200px">
+        <h4 style = "color: blue">Game: <%= game.title %></h4>
+        <h5 style = "color: red">Game Creator: <%= game.author %></h5>
+        </div>
+    <% }) %>
+    
+    
+    
+    </body>
+</html>
